@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {useDarkMode} from '../Hooks/useDarkMode'
 
 const DarkNav = () => {
@@ -8,7 +8,7 @@ const DarkNav = () => {
         setDarkMode(!darkMode);
     }
     return(
-        <div className='nav-container'>
+        <div className='nav-container' data-test='dark-Com'>
             <div className="dark-mode-toggle">
                 <div
                 onClick={toggle}
