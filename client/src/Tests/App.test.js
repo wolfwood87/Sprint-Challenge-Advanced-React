@@ -7,7 +7,7 @@ import App from '../App';
 
 Enzyme.configure({ adapter: new EnzymeAdapter()});
 
-test('App renders' () => {
+test('App renders', () => {
   const wrapper = shallow(<App />);
   const appCom = wrapper.find("[data-test='app-Com']");
   expect(appCom.length).toBe(1);
