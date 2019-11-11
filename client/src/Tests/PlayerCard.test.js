@@ -7,7 +7,7 @@ import PlayerCard from '../Components/PlayerCard.js';
 
 Enzyme.configure({ adapter: new EnzymeAdapter()});
 
-test('PlayerCard renders', () => {
+test('PlayerCard 1 renders', () => {
   const wrapper = shallow(<PlayerCard player={{id: 0, name: 'Alex Morgan'}} />);
   const playCom = wrapper.find("[data-test='play-Com']");
   expect(playCom.length).toBe(1);
